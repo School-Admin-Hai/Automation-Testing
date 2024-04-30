@@ -1,0 +1,7 @@
+<suite name="TestSuite">
+    <test name="TestCase">
+        <classes>
+            <class name="learningTestNG.Player"/>
+        </classes>
+    </test>
+</suite>
