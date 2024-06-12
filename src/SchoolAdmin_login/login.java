@@ -16,8 +16,8 @@ public class login {
         driver.get("https://schooladmin-hai.vercel.app/");
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 Thread.sleep(2000);
-        driver.findElement(By.id("username")).sendKeys("anupa@gmail.com");
-        driver.findElement(By.id("password")).sendKeys("123456");
+        driver.findElement(By.id("username")).sendKeys("hammer@gmail.com");
+        driver.findElement(By.id("password")).sendKeys("hammer@0412");
 
         driver.findElement(By.cssSelector(".m_811560b9.mantine-Button-label")).click();
     }

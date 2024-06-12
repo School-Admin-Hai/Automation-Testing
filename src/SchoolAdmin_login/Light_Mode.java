@@ -12,13 +12,22 @@ public class Light_Mode {
         driver.get("https://schooladmin-hai.vercel.app/");
         Thread.sleep(3000);
         driver.findElement(By.id("username")).sendKeys("hammer@gmail.com");
-        driver.findElement(By.id("password")).sendKeys("war@0412");
-        driver.findElement(By.cssSelector(".m_811560b9.mantine-Button-label")).click();
+        driver.findElement(By.id("password")).sendKeys("hammer@0412");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//span[text()='Sign in']")).click();
+//Black to white
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("(//button[@aria-label='Toggle color scheme']) [2] ")).click();
+//White to black
         Thread.sleep(5000);
+        driver.findElement(By.xpath("(//button[@aria-label='Toggle color scheme']) [2] ")).click();
 
-        driver.findElement(By.xpath("(//*[name()='svg'][@class='tabler-icon tabler-icon-settings'])[1]")).click();
-        //Below line showing change the color Black to Light mode
-        driver.findElement(By.xpath("(//*[name()='svg'][@class='_icon_1avv3_1 _light_1avv3_16'])[1]")).click();
+//Logout script
+        Thread.sleep(3000);
+       // driver.findElement(By.xpath("//button[@aria-label='Toggle color scheme']) [3] ")).click();
+        driver.findElement(By.xpath("//button[@type='button']/div[text()='Logout']")).click();
+
+
 
     }
 }

@@ -19,7 +19,7 @@ public class NewAdmission {
 
         driver.findElement(By.id("username")).sendKeys("hammer@gmail.com");
         driver.findElement(By.id("password")).sendKeys("hammer@0412");
-        driver.findElement(By.cssSelector(".m_811560b9.mantine-Button-label")).click();
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
         Thread.sleep(4000);
 
         driver.findElement(By.xpath("//a[@href='/admission']")).click();
@@ -39,8 +39,8 @@ public class NewAdmission {
         Thread.sleep(4000);
 
         //For the Dynamic dropdown written the step
-        WebElement news = driver.findElement(By.id("classandDivision"));
-        news.sendKeys("Class L.K.G - B");
+        driver.findElement(By.id("classandDivision-label")).click();
+        driver.findElement(By.xpath("//span[text()='Class Play - ']")).click();
 
 
         Thread.sleep(4000);
